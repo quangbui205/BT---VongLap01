@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 = +prompt("Nhap so dau tien cua day Fibonacci:");
+    while (1)
+    {
+        if (f1>1)
+        {
+            alert("Xin moi nhap lai so dau tien cua day:");
+            f1 = +prompt("Nhap so dau tien cua day Fibonacci:");
+        }
+        else
+        {
+            break;
+        }
+    }
+    let f2 = 1;
+    let f3 ;
+    for(i=3;;i++)
+    {
+        f3 = f1+ f2;
+        f1=f2;
+        f2=f3;
+        if (f3 % 5==0)
+        {
+            document.write("So dau tien trong day Fibonacci chia het cho 5 là " +f3 );
+            break;
+        }
+    }
+</script>
+</body>
+</html>

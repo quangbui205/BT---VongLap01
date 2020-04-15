@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let Nhietdo = parseFloat(prompt("Nhap Nhiet Do hien tai: "));
+    while ((Nhietdo<20)||(Nhietdo>100))
+    {
+        if ((Nhietdo<20))
+        {
+            alert("Lam on tang Nhiet Do");
+            break;
+        }
+        if ((Nhietdo)>100)
+        {
+            alert("Lam on giam Nhiet Do");
+            break;
+        }
+    }
+    if ((Nhietdo>=20)&&(Nhietdo<=100))
+    {
+        alert("Nhiet Do hien tai la: " + Nhietdo + "*C");
+    }
+</script>
+</body>
+</html>

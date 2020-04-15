@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = +prompt("Nhap vao so luong cac so: ");
+    let num = +prompt("Nhap vao so muon chia het: ") ;
+    let total = 0;
+    let product = num *count;
+    for(i=num; i<= product; i += num)
+    {
+        total= total +i;
+    }
+    alert("Tong cua " + count + " so chia het cho " + num + " la: " +total );
+</script>
+</body>
+</html>

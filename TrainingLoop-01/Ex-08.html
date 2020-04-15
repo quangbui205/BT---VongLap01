@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="myFunction()">Let's Play!!!</button>
+<script>
+    function myFunction()
+    {
+        let min = +prompt("Nhap so Dau Tien cua day:");
+        let max = +prompt("Nhap so Cuoi Cung cua day:");
+        let NumberRandom= Math.floor(Math.random()*(max - min+1)+min);
+        //Math.random()*(max - min+1)+min gọi ngẫu nhiên 1 số bất kỳ trong khoảng từ min đến max. Mặc định là số thập phân
+        //Math.floor() gọi giá trị số nguyên
+        while (1)
+        {
+            let Targetnum = +prompt("Nhap vao so ban chon:");
+            if (Targetnum < NumberRandom)
+            {
+                alert("Cho to hon di!!");
+            }
+            else if (Targetnum > NumberRandom)
+            {
+                alert("Giam nho di ban oi!!");
+            }
+            else
+            {
+                alert("Congratulations!!");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
